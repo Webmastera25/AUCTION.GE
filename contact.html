@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>კონტაქტი | Auction.ge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/auction-logo.png" height="40" class="me-2" alt="Auction.ge Logo">
+        Auction.ge
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">სიახლეები</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ნივთები</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="auction.html?cat=small">წვრილი ტექნიკა</a></li>
+              <li><a class="dropdown-item" href="auction.html?cat=large">მსხვილი ტექნიკა</a></li>
+              <li><a class="dropdown-item" href="auction.html?cat=home">საოჯახო ტექნიკა</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="ouar.html">ჩვენს შესახებ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">კონტაქტი</a></li>
+          <li class="nav-item"><a class="nav-link" href="pay.html">ბალანსის შევსება</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">შესვლა</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">რეგისტრაცია</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="balance-box">
+      <strong data-i18n="currentBalance">ბალანსი: </strong><br><span id="currentBalance">0 ₾</span>
+    </div>
+  </nav>
+
+
+  <section class="contact-container">
+    <div class="contact-header">
+      <h1 class="typewriter">დაგვიკავშირდი</h1>
+      <p>გთხოვთ ნებისმიერი კითხვის შემთხვევაში მოგვმართოთ ჩვენი გუნდი მალე დაგიკავშირდებათ.</p>
+    </div>
+  
+    <div class="contact-form-section">
+      <form class="contact-form" id="contactForm">
+        <label for="name">სახელი გვარი</label>
+        <input type="text" id="name" name="name" required placeholder="თქვენი სახელი და გვარი">
+  
+        <label for="email">ელ. ფოსტა</label>
+        <input type="email" id="email" name="email" required placeholder="თქვენი ელ. ფოსტა">
+  
+        <label for="message">შეტყობინება</label>
+        <textarea id="message" name="message" required placeholder="თქვენი შეტყობინება"></textarea>
+  
+        <button type="submit">გაგზავნა</button>
+      </form>
+  
+      <div class="message-success" style="display: none;">
+        <p>თქვენი შეტყობინება გაიგზავნა!</p>
+      </div>
+    </div>
+  
+    <section class="contact-info">
+      <h2>საკონტაქტო ინფორმაცია</h2>
+      <ul>
+        <li><strong>ტელეფონი:</strong> +995 555 123 456</li>
+        <li><strong>ელფოსტა:</strong> info@auction.ge</li>
+        <li><strong>მისამართი:</strong> თბილისი, საქართველოს ქუჩა N10</li>
+      </ul>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  
+    <!-- სურვილის შემთხვევაში -->
+    <section class="map-section">
+      <h2>სად ვიმყოფებით?</h2>
+      <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Auction.ge
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="auction.js"></script>
+</body>
+</html>

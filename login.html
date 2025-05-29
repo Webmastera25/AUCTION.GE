@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>შესვლა | Auction.ge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/auction-logo.png" height="40" class="me-2" alt="Auction.ge Logo">
+        Auction.ge
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">მთავარი</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">სიახლეები</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ნივთები</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="auction.html?cat=small">წვრილი ტექნიკა</a></li>
+              <li><a class="dropdown-item" href="auction.html?cat=large">მსხვილი ტექნიკა</a></li>
+              <li><a class="dropdown-item" href="auction.html?cat=home">საოჯახო ტექნიკა</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="ouar.html">ჩვენს შესახებ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+          <li class="nav-item"><a class="nav-link active" href="login.html">შესვლა</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">რეგისტრაცია</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar -->
+
+  <section class="d-flex align-items-center justify-content-center vh-100">
+    <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
+      <h3 class="card-title mb-3 text-center">შესვლა</h3>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="loginEmail" required>
+        </div>
+        <div class="mb-3">
+          <label for="loginPassword" class="form-label">პაროლი</label>
+          <input type="password" class="form-control" id="loginPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">შესვლა</button>
+        <p class="mt-3 text-center">არ გაქვს ანგარიში? <a href="register.html" class="log"> მაშინ გაიარე მარტივი რეგისტრაცია</a></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Auction.ge
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="auction.js"></script>
+</body>
+</html>
